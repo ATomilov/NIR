@@ -17,11 +17,11 @@ foreach ($dir_items as $dir_item) :
       'width' => $size[0],
     ),
   );
-  $formattedData = json_encode($data);
-  $filename = $dir_item[0] . ".json";
-  $handle = fopen($tags . "/" . $filename,'w+');
-  fwrite($handle,$formattedData);
-  fclose($handle);
+  // $formattedData = json_encode($data, JSON_UNESCAPED_UNICODE);
+  // $filename = $dir_item[0] . ".json";
+  // $handle = fopen($tags . "/" . $filename,'w+');
+  // fwrite($handle,$formattedData);
+  // fclose($handle);
 endforeach;
 // echo count($dir_items);
 // sort($dir_items);
